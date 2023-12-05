@@ -15,7 +15,7 @@ class Venue {
 
   void reserveVenue(String venue, String date, String time) {
     _venue = venue; //get venue
-    _key = '$venue-$date-$time'; //combine venue, date and time as key
+    _key = '$venue $date $time'; //combine venue, date and time as key
     _dateTime = DateTime.parse('$date $time'); //format to datetime
 
     if (reserved.containsKey(_key) && reserved[_key] == true) {
@@ -35,6 +35,7 @@ class Venue {
     Element? record = querySelector('#record');
     record?.text = reserved.toString();
   }
+
   /*bool checkAvailability(DateTime dateTime) {
     if (!isAvailable) return false;
     //check kalaau venue tu dah di book
@@ -52,4 +53,57 @@ class Venue {
     isAvailable = false;
   }
   */
+
+  void printReservedTable() {
+    Element? outputDiv = querySelector('#records');
+    outputDiv?.text = reserved.toString();
+    // Clear the previous content of the output div
+    outputDiv?.innerHtml = '';
+
+    // Create a table element
+    var table = TableElement();
+    table.style.border = '1px solid black';
+
+    // Create table header
+    var headerRow = table.createTHead().insertRow(0);
+
+    headerRow.addCell()
+      ..text = 'Venue'
+      ..style.border = '1px solid black';
+    headerRow.addCell()
+      ..text = 'Date'
+      ..style.border = '1px solid black';
+    headerRow.addCell()
+      ..text = 'Time'
+      ..style.border = '1px solid black';
+    headerRow.addCell()
+      ..text = 'Status'
+      ..style.border = '1px solid black';
+
+    // Populate the table with reserved venues
+    reserved.forEach((key, status) {
+      var row = table.createTBody().addRow();
+      var keyParts = key.split(' ');
+
+      // Set borders for each cell
+      row.addCell()
+        ..text = keyParts[0]
+        ..style.border = '1px solid black'; // Venue cell border
+
+      row.addCell()
+        ..text = keyParts[1]
+        ..style.border = '1px solid black'; // Date cell border
+
+      row.addCell()
+        ..text = keyParts[2]
+        ..style.border = '1px solid black'; // Time cell border
+
+      row.addCell()
+        ..text = status.toString()
+        ..style.border = '1px solid black'; // Status cell border
+    });
+
+    // Append the table to the output div
+    outputDiv?.append(table);
+  }
 }
