@@ -13,6 +13,7 @@ void main() {
     // Call the reserveVenue function in venue.dart passing the selected values
     Venue newBook = Venue(reserved);
     newBook.reserveVenue(venue!, date!, time!);
+    newBook.printReservedTable();
     newBook.printReservedMap();
   });
 
