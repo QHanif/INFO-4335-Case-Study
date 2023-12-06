@@ -14,7 +14,7 @@ void main() {
     Venue newBook = Venue(reserved);
     newBook.reserveVenue(venue!, date!, time!);
     newBook.printReservedTable();
-    newBook.printReservedMap();
+    // newBook.printReservedMap();
   });
 
   // querySelector('#output')?.text = 'Your Dart app is running.';

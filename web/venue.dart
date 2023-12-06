@@ -76,9 +76,6 @@ class Venue {
     headerRow.addCell()
       ..text = 'Time'
       ..style.border = '1px solid black';
-    headerRow.addCell()
-      ..text = 'Status'
-      ..style.border = '1px solid black';
 
     // Populate the table with reserved venues
     reserved.forEach((key, status) {
@@ -98,9 +95,21 @@ class Venue {
         ..text = keyParts[2]
         ..style.border = '1px solid black'; // Time cell border
 
-      row.addCell()
-        ..text = status.toString()
-        ..style.border = '1px solid black'; // Status cell border
+      // Add a delete button to the row
+      var deleteButton = ButtonElement()
+        ..text = 'Delete'
+        ..style.border = '1px solid black'
+        ..style.borderRadius = '5px'
+        ..onClick.listen((event) {
+          // Remove the row from the table
+          row.remove();
+
+          // Remove the venue from the reserved map
+          reserved.remove(key);
+        });
+
+      // Add the delete button to a new cell in the row
+      row.addCell().children.add(deleteButton);
     });
 
     // Append the table to the output div

@@ -52,14 +52,15 @@ button {
 }
 
 button {
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
+  background-color: rgb(255, 0, 0);
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #a06645;
 }
 
 /* Style the output container */
