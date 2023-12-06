@@ -9,11 +9,18 @@ void main() {
     var venue = (querySelector('#venue') as SelectElement).value;
     var date = (querySelector('#date') as InputElement).value;
     var time = (querySelector('#time') as SelectElement).value;
+    var progName = (querySelector('#progName') as InputElement).value;
 
     // Call the reserveVenue function in venue.dart passing the selected values
     Venue newBook = Venue(reserved);
+<<<<<<< Updated upstream
     newBook.reserveVenue(venue!, date!, time!);
     newBook.printReservedMap();
+=======
+    newBook.reserveVenue(venue!, date!, time!,progName!);
+    newBook.printReservedTable();
+    // newBook.printReservedMap();
+>>>>>>> Stashed changes
   });
 
   // querySelector('#output')?.text = 'Your Dart app is running.';
