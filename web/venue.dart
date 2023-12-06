@@ -1,7 +1,7 @@
 import 'dart:html';
 import 'dart:core';
 
-//qoys & saufi
+// saufi
 
 class Venue {
   String _venue;
@@ -61,6 +61,7 @@ class Venue {
     isAvailable = false;
   }
   */
+
 //qoys & azhad
   void printReservedTable() {
     Element? outputDiv = querySelector('#records');
