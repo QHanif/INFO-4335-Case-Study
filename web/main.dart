@@ -3,7 +3,7 @@ import 'venue.dart';
 
 //azhad
 void main() {
-  Map<String, bool> reserved = {};
+  Map<String, String> reserved = {};
   final ButtonElement submit = querySelector('#submit') as ButtonElement;
   submit.onClick.listen((event) {
     // Get the selected values they return as strings for some reason
