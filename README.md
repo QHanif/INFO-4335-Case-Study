@@ -4,22 +4,22 @@
 Fluttered
 
 ## Group Members Detail
-*Qoys Al Hanif bin Jaafar (2016863)
-*Muhammad Zaidi bin Abdul Razak (1820833)
-*Muhammad Azhad bin Muhammad Nasim (2015905)
-*Saufi bin Azmi (2018781)
+* Qoys Al Hanif bin Jaafar (2016863)
+* Muhammad Zaidi bin Abdul Razak (1820833)
+* Muhammad Azhad bin Muhammad Nasim (2015905)
+* Saufi bin Azmi (2018781)
 
 ## Group Member Assigned Task
-*Qoys
+* Qoys
  *
  *
-*Zaidi
+* Zaidi
  *
  *
-*Azhad
+* Azhad
  *
  *
-*Saufi
+* Saufi
  *
  *
 
