@@ -1,12 +1,15 @@
 import 'dart:html';
 import 'dart:core';
 
+//qoys & saufi
+
 class Venue {
   String _venue;
   String _key;
   DateTime _dateTime;
   String _progName;
-  Map<String, bool> reserved; //key is venue+date+time, bool is the availability
+  Map<String, bool>
+      reserved; //key is venue+name+date+time, bool is the availability
 
   Venue(var reserved1)
       : _venue = '',
@@ -15,10 +18,12 @@ class Venue {
         _dateTime = DateTime.now(),
         reserved = reserved1;
 
+//zaidi
+
   void reserveVenue(String venue, String date, String time, String progName) {
     _venue = venue; //get venue
     _progName = progName; //get programme name
-    _key = '$venue $date $time $progName'; //combine venue, date and time as key
+    _key = '$venue;$date;$time;$progName'; //combine venue, date and time as key
     _dateTime = DateTime.parse('$date $time'); //format to datetime
 
     if (reserved.containsKey(_key) && reserved[_key] == true) {
@@ -56,7 +61,7 @@ class Venue {
     isAvailable = false;
   }
   */
-
+//qoys & azhad
   void printReservedTable() {
     Element? outputDiv = querySelector('#records');
     outputDiv?.text = reserved.toString();
@@ -86,7 +91,7 @@ class Venue {
     // Populate the table with reserved venues
     reserved.forEach((key, status) {
       var row = table.createTBody().addRow();
-      var keyParts = key.split(' ');
+      var keyParts = key.split(';');
 
       // Set borders for each cell
       row.addCell()
