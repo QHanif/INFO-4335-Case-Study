@@ -1,1 +1,0 @@
-["build_web_compilers:entrypoint on web/main.dart",["","AssetNotFoundException: quickstart|web/main.ddc.js.metadata",""]]
