@@ -20,14 +20,12 @@ Fluttered
   *
   *
 * Azhad
-  * Programme Name
+  *
   *
 * Saufi
   *
   *
 
 ## Brief Description of the case study
-The case study focus on implementing a system which are Venue Reservation System which allow users to book a venue. Some of the functionality of the system are booking with preferred date, time, slot and programme name. This system helps users to reduce their time in finding ways to book a venue.
-
+The case study focus on developing Venue Reservation System which allow users to book a venue. Some of the functionality of the system are booking the venue by date, time, preferred slot and the name of the programme. This system helps in reducing the amount of time for users to book the venue without having to waste their time on coming physically to book.
   
->>>>>>> Stashed changes
