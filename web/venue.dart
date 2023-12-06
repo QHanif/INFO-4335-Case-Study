@@ -17,12 +17,8 @@ class Venue {
 
   void reserveVenue(String venue, String date, String time, String progName) {
     _venue = venue; //get venue
-<<<<<<< Updated upstream
-    _key = '$venue-$date-$time'; //combine venue, date and time as key
-=======
     _progName = progName; //get name
     _key = '$venue $date $time $progName'; //combine venue, date and time as key
->>>>>>> Stashed changes
     _dateTime = DateTime.parse('$date $time'); //format to datetime
 
     if (reserved.containsKey(_key) && reserved[_key] == true) {
@@ -59,9 +55,6 @@ class Venue {
     isAvailable = false;
   }
   */
-<<<<<<< Updated upstream
-}
-=======
 
   void printReservedTable() {
     Element? outputDiv = querySelector('#records');
@@ -132,4 +125,3 @@ class Venue {
     outputDiv?.append(table);
   }
 }
->>>>>>> Stashed changes

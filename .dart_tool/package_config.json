@@ -75,7 +75,7 @@
     },
     {
       "name": "build_runner",
-      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/build_runner-2.4.6",
+      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/build_runner-2.4.7",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -87,9 +87,9 @@
     },
     {
       "name": "build_web_compilers",
-      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/build_web_compilers-4.0.6",
+      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/build_web_compilers-4.0.7",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.1"
     },
     {
       "name": "built_collection",
@@ -99,7 +99,7 @@
     },
     {
       "name": "built_value",
-      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/built_value-8.7.0",
+      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/built_value-8.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -111,9 +111,9 @@
     },
     {
       "name": "code_builder",
-      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/code_builder-4.7.0",
+      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/code_builder-4.8.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "collection",
@@ -135,7 +135,7 @@
     },
     {
       "name": "dart_style",
-      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/dart_style-2.3.3",
+      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/dart_style-2.3.4",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -237,9 +237,9 @@
     },
     {
       "name": "path",
-      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.3",
+      "rootUri": "file:///C:/Users/USER/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "pointycastle",
@@ -374,7 +374,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-12-06T11:41:21.754478Z",
+  "generated": "2023-12-06T13:58:04.899589Z",
   "generator": "pub",
   "generatorVersion": "3.1.4"
 }
