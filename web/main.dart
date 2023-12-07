@@ -1,7 +1,8 @@
 import 'dart:html';
 import 'venue.dart';
 
-//azhad
+//Zaidi(1820833) & Qoys(2016863)
+
 void main() {
   Map<String, String> reserved = {};
   final ButtonElement submit = querySelector('#submit') as ButtonElement;

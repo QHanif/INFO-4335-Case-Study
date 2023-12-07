@@ -1,7 +1,7 @@
 import 'dart:html';
 import 'dart:core';
 
-// saufi
+//Saufi(2018781)
 
 class Venue {
   String _venue;
@@ -17,7 +17,7 @@ class Venue {
         _dateTime = DateTime.now(),
         reserved = reserved1;
 
-//zaidi
+//Zaidi(1820833)
 
   void reserveVenue(String venue, String date, String time, String progName) {
     _venue = venue; //get venue
@@ -61,7 +61,7 @@ class Venue {
   }
   */
 
-//qoys & azhad
+// Qoys(2016863) & Azhad(2015905)
   void printReservedTable() {
     Element? outputDiv = querySelector('#records');
     outputDiv?.text = reserved.toString();
