@@ -10,7 +10,8 @@ Fluttered
 * Saufi bin Azmi (2018781)
 
 ## Group Member Assigned Task
-* Qoys 
+* Qoys
+  * main() 
   * printReservedTable()
   * styles.css
 * Zaidi
