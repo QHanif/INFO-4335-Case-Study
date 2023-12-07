@@ -79,13 +79,13 @@ class Venue {
       ..text = 'Venue'
       ..style.border = '1px solid black';
     headerRow.addCell()
+      ..text = 'Programme Name'
+      ..style.border = '1px solid black';
+    headerRow.addCell()
       ..text = 'Date'
       ..style.border = '1px solid black';
     headerRow.addCell()
       ..text = 'Time'
-      ..style.border = '1px solid black';
-    headerRow.addCell()
-      ..text = 'Programme Name'
       ..style.border = '1px solid black';
 
     // Populate the table with reserved venues
@@ -99,16 +99,16 @@ class Venue {
         ..style.border = '1px solid black'; // Venue cell border
 
       row.addCell()
+        ..text = name
+        ..style.border = '1px solid black'; // Programme Name cell border
+
+      row.addCell()
         ..text = keyParts[1]
         ..style.border = '1px solid black'; // Date cell border
 
       row.addCell()
         ..text = keyParts[2]
         ..style.border = '1px solid black'; // Time cell border
-
-      row.addCell()
-        ..text = name
-        ..style.border = '1px solid black'; // Programme Name cell border
 
       // Add a delete button to the row
       var deleteButton = ButtonElement()
